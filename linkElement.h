@@ -18,6 +18,7 @@ public:
     linkElement();
     ~linkElement();
 
+    void addLink(const pLinkElement linkElement);
 private:
     pLinkElementArray m_linkElementArray;
 };
