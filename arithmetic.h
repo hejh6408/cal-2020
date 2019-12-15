@@ -1,4 +1,4 @@
-#progma once
+#pragma once
 
 #ifndef ARITHMETIC_H
 #define ARITHMETIC_H
@@ -8,13 +8,16 @@
 class arithmetic
 {
 public:
-    arithmetic();
-    ~arithmetic();
+    arithmetic(const size_t inputSize = 1);
+    virtual ~arithmetic();
 
-    virtual data_array op(const data_array& inputs) const = 0;
+    virtual data op(const data_array& inputs) = 0;
+
+    void setArithmeticResult(data result);
+    data getArithmeticResult(void) const;
 private:
-
-}
-
+    std::size_t m_inputSize;
+    data m_result;
+};
 
 #endif // ARITHMETIC_H
