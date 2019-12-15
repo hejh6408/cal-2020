@@ -19,6 +19,7 @@ SOURCES += \
     arithmetic.cpp \
     arithmeticMultiply.cpp \
     arithmeticPlus.cpp \
+    linkElement.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -27,6 +28,7 @@ HEADERS += \
     arithmeticMultiply.h \
     arithmeticPlus.h \
     definition.h \
+    linkElement.h \
     mainwindow.h
 
 FORMS += \
