@@ -17,11 +17,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     arithmetic.cpp \
+    arithmeticPlus.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     arithmetic.h \
+    arithmeticPlus.h \
     definition.h \
     mainwindow.h
 
