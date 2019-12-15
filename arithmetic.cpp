@@ -20,3 +20,13 @@ data arithmetic::getArithmeticResult() const
 {
     return this->m_result;
 }
+
+void arithmetic::setArithmeticInputSize(const std::size_t inputsize)
+{
+    this->m_inputSize = inputsize;
+}
+
+std::size_t arithmetic::getArithmeticInputSize() const
+{
+    return this->m_inputSize;
+}
