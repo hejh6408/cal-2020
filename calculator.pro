@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     arithmetic.cpp \
+    arithmeticConst.cpp \
     arithmeticMultiply.cpp \
     arithmeticPlus.cpp \
     linkElement.cpp \
@@ -25,6 +26,7 @@ SOURCES += \
 
 HEADERS += \
     arithmetic.h \
+    arithmeticConst.h \
     arithmeticMultiply.h \
     arithmeticPlus.h \
     definition.h \
