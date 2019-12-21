@@ -5,13 +5,17 @@
 
 #include "arithmetic.h"
 
+class arithmeticConst;
+
+typedef std::shared_ptr<arithmeticConst> pArithmeticConst;
+
 class arithmeticConst : public arithmetic
 {
 public:
-    arithmeticConst(size_t inputSize = 1);
+    arithmeticConst();
     ~arithmeticConst() override;
 
-    virtual void op(const data_array& inputs) override;
+    virtual void op(data& result, const data input) override;
 private:
 
 };

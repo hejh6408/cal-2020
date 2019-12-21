@@ -4,6 +4,8 @@
 #define LINKELEMENT_H
 
 #include <memory>
+#include <map>
+#include <set>
 #include <vector>
 
 class linkElement;
@@ -16,10 +18,12 @@ class linkElement
 {
 public:
     linkElement();
-    ~linkElement();
+    virtual ~linkElement();
 
-    void addLink(const pLinkElement linkElement);
+    void addLink(const pLinkElement& linkElement, const size_t index);
+    void delLink(const pLinkElement& linkElement, const size_t index);
+
 private:
-    pLinkElementArray m_linkElementArray;
+    std::map<pLinkElement,std::set<size_t> > m_linkElementInfo;
 };
 #endif // LINKELEMENT_H

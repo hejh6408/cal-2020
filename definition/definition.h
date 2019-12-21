@@ -7,6 +7,6 @@
 
 typedef double data;
 
-typedef  std::vector<data> data_array;
+typedef  std::vector<data> dataArray;
 
 #endif // DEFINITION_H

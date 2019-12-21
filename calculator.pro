@@ -16,21 +16,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    arithmetic.cpp \
-    arithmeticConst.cpp \
-    arithmeticMultiply.cpp \
-    arithmeticPlus.cpp \
-    linkElement.cpp \
+    arithmetic/arithmetic.cpp \
+    arithmetic/arithmeticConst.cpp \
+    arithmetic/arithmeticMultiply.cpp \
+    arithmetic/arithmeticPlus.cpp \
+    linkElement/linkElement.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    arithmetic.h \
-    arithmeticConst.h \
-    arithmeticMultiply.h \
-    arithmeticPlus.h \
-    definition.h \
-    linkElement.h \
+    arithmetic/arithmetic.h \
+    arithmetic/arithmeticConst.h \
+    arithmetic/arithmeticMultiply.h \
+    arithmetic/arithmeticPlus.h \
+    definition/definition.h \
+    linkElement/linkElement.h \
     mainwindow.h
 
 FORMS += \

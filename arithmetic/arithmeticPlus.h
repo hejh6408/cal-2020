@@ -5,13 +5,17 @@
 
 #include "arithmetic.h"
 
+class arithmeticPlus;
+
+typedef std::shared_ptr<arithmeticPlus> pArithmeticPlus;
+
 class arithmeticPlus : public arithmetic
 {
 public:
-    arithmeticPlus(size_t inputSize = 2);
+    arithmeticPlus();
     ~arithmeticPlus() override;
 
-    virtual void op(const data_array& inputs) override;
+    virtual void op(data& result, const data input) override;
 private:
 
 };

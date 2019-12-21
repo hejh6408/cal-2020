@@ -5,13 +5,17 @@
 
 #include "arithmetic.h"
 
+class arithmeticMultiply;
+
+typedef std::shared_ptr<arithmeticMultiply> pArithmeticMultiply;
+
 class arithmeticMultiply : public arithmetic
 {
 public:
-    arithmeticMultiply(size_t inputSize = 2);
+    arithmeticMultiply();
     ~arithmeticMultiply() override;
 
-    virtual void op(const data_array& inputs) override;
+    virtual void op(data& result, const data input) override;
 private:
 
 };
