@@ -2,8 +2,9 @@
 #include <cassert>
 
 arithmeticConst::arithmeticConst()
-    : arithmetic()
+    : arithmetic(1)
 {
+
 }
 
 arithmeticConst::~arithmeticConst()

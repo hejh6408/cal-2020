@@ -12,7 +12,7 @@ typedef std::shared_ptr<arithmeticPlus> pArithmeticPlus;
 class arithmeticPlus : public arithmetic
 {
 public:
-    arithmeticPlus();
+    arithmeticPlus(const size_t size = 2);
     ~arithmeticPlus() override;
 
     virtual void op(data& result, const data input) override;

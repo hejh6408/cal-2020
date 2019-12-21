@@ -1,8 +1,8 @@
 #include "arithmeticPlus.h"
 
 
-arithmeticPlus::arithmeticPlus()
-    : arithmetic()
+arithmeticPlus::arithmeticPlus(const size_t size)
+    : arithmetic(size)
 {
 
 }

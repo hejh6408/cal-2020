@@ -1,7 +1,7 @@
 #include "arithmeticMultiply.h"
 
-arithmeticMultiply::arithmeticMultiply()
-    : arithmetic()
+arithmeticMultiply::arithmeticMultiply(const size_t size)
+    : arithmetic(size)
 {
 
 }
