@@ -21,7 +21,6 @@ SOURCES += \
     arithmetic/arithmeticMultiply.cpp \
     arithmetic/arithmeticPlus.cpp \
     linkElement/linkElement.cpp \
-    main.cpp \
     uiElement/mainwindow.cpp
 
 HEADERS += \
