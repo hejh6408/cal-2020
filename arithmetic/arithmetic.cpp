@@ -3,7 +3,7 @@
 #include <cassert>
 
 arithmetic::arithmetic(const size_t size)
-    : m_dataArray(size, false), m_isIndexDataValid(size, false), m_result(0), m_arithmethValidity(false)
+    : m_dataArray(size, false), m_isIndexDataValid(size, false), m_arithmethValidity(false), m_result(0)
 {
 
 }
@@ -11,6 +11,11 @@ arithmetic::arithmetic(const size_t size)
 arithmetic::~arithmetic()
 {
 
+}
+
+void arithmetic::intializeResult(const data result)
+{
+    this->m_result = result;
 }
 
 void arithmetic::setDataArraySize(const size_t size)

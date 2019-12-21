@@ -17,7 +17,7 @@ public:
     arithmetic(const size_t size);
     virtual ~arithmetic();
 
-    virtual void intialize(data result);
+    void intializeResult(const data result);
 
     virtual void op(data& result, const data input) = 0;
 
@@ -28,7 +28,7 @@ public:
 
     void setDataValidityByIndex(const size_t index, bool validity);
 
-    void calculate();
+    virtual void calculate();
     void resetData();
 
     data getResult() const;

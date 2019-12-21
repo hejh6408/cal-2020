@@ -16,6 +16,8 @@ public:
     ~arithmeticPlus() override;
 
     virtual void op(data& result, const data input) override;
+
+    virtual void calculate() override;
 private:
 
 };

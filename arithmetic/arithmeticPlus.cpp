@@ -16,3 +16,10 @@ void arithmeticPlus::op(data& result, const data input)
 {
     result += input;
 }
+
+void arithmeticPlus::calculate()
+{
+    arithmetic::intializeResult(0);
+
+    arithmetic::calculate();
+}
