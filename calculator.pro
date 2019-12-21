@@ -22,7 +22,7 @@ SOURCES += \
     arithmetic/arithmeticPlus.cpp \
     linkElement/linkElement.cpp \
     main.cpp \
-    mainwindow.cpp
+    uiElement/mainwindow.cpp
 
 HEADERS += \
     arithmetic/arithmetic.h \
@@ -31,10 +31,10 @@ HEADERS += \
     arithmetic/arithmeticPlus.h \
     definition/definition.h \
     linkElement/linkElement.h \
-    mainwindow.h
+    uiElement/mainwindow.h
 
 FORMS += \
-    mainwindow.ui
+    uiElement/uiFile/mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
